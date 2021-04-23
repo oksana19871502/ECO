@@ -1,0 +1,281 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+html, body {
+	height:100%;
+	width:100%;
+}
+
+button {
+	cursor: pointer;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #91ac27;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+body, button, input {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
+body {
+	background: url(../img/bg.png) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.white-background{
+	background: white;
+    margin: 10%;
+    padding: 5%;
+}
+
+#buttonTop, input[type="checkbox"] {
+	display: none;
+}
+
+header {
+	display: flex;
+    flex-direction: column;
+}
+
+.header-top {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top > article {
+	display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.header-top > article > #logInButton{
+    color: white;
+}
+
+.button {
+	background: #91ac27;
+    color: white;
+    padding: 15px;
+    transition: all 0.5s;
+}
+
+.button:hover {
+	background: green;
+	transition: all 0.5s;
+	color: white;
+}
+
+.button_link {
+	text-align: center;
+}
+
+.button_large {
+	width: 100%;
+}
+
+#logoButton {
+	flex-grow: 4;
+}
+
+#show-card, .products > article > p {
+	line-height: 49px;
+}
+
+/*#menu {
+	display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+#menu > li {
+	margin: 0 10px;
+	padding: 10px 0;
+	border-bottom: 2px solid transparent;
+}
+
+#menu > li:hover {
+	border-bottom: 2px solid #91ac27;
+}
+
+#menu > li:hover > a {
+	color: #91ac27;
+}
+*/
+.products {
+	display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    justify-content: space-around;
+}
+
+.products > h2 {
+	width: 100%;
+}
+
+.products > article{
+    text-align: center;
+}
+
+.subscribe {
+	background: url('../img/empty-bg.jpg') no-repeat;
+	padding: 100px 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe > input[type="email"] {
+	padding: 15px;
+    margin: 15px 0;
+}
+
+.subscribe > p {
+	color: white;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+section > h2 {
+	padding: 10px 0;
+	font-size: 13px;
+    text-transform: uppercase;
+}
+
+section {
+	margin-top: 50px;
+}
+
+section:first-child {
+	margin-top: 0;
+}
+
+.footer-section {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section > article {
+	width: 250px;
+}
+
+h3 {
+	font-size: 22px;
+    margin: 10px 0;
+}
+
+.footer-social > a {
+	border-radius: 50%;
+    border: 20px solid black;
+    background: black;
+    color: white;
+    width: 25px;
+    display: block;
+    height: 25px;
+    text-align: center;
+    margin: 10px;
+    transition: .5s all;
+}
+
+.footer-social > a:hover{
+    background-color: #91ac27;
+    border-color: #91ac27;
+    transition: .5s all;
+}
+
+.footer-social {
+	display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+footer > p {
+	text-align: center;
+}
+
+#buttonTop {
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 60px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttonTop:hover {
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+}
+
+#buttonTop:active {
+    background-color: #555;
+    color: white;
+}
+
+#buttonTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+#cartBody article {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+
+@media screen and (max-width: 425px) {
+	body {
+		background: none;
+	}
+
+	.header-top {
+		flex-direction: column;
+	}
+
+	#logoButton {
+		margin-bottom: 30px;
+	}
+
+	.header-top > article {
+		width: 100%;
+		text-align: center;
+	}
+}

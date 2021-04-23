@@ -1,0 +1,51 @@
+.white {
+    background-color: white;
+    margin: 100px 50px;
+}
+
+#log {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 30px 10px;
+}
+
+form {
+    padding: 20px 0px 5px 0px;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+
+.oninput, .twoinput {
+    border: solid 1px;
+    width: 100%;
+    padding: 5px;
+    color: gray;
+}
+
+p {
+    padding-top: 20px;
+    padding-bottom: 1px;
+}
+
+.rem {
+    margin-top: 20px;
+}
+
+#check, input[type="checkbox"] {
+    display: flex;
+}
+
+#clearCard {
+    padding: 5px;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+
