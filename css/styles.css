@@ -190,16 +190,16 @@ h3 {
 }
 
 .footer-social > a {
-	border-radius: 50%;
+    border-radius: 50%;
     border: 20px solid black;
     background: black;
     color: white;
     width: 25px;
-    display: block;
     height: 25px;
-    text-align: center;
     margin: 10px;
-    transition: .5s all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-social > a:hover{
